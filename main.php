@@ -1,6 +1,12 @@
 <html>
-<?php echo require("general/header.html")>
-<body>
-
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>HomeControl-mirrorUI</title>
+		<style>
+			body {background-color: black;}
+		</style>
+	</head>
+	<body>
+	
+	</body>
 </html>
