@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="static/css/layout.css">
+		<link rel="stylesheet" href="bundles/info_services/clock.css">
 		<script src="static/js/jquery.js"></script>
 		<script src="static/js/bootstrap.js"></script>
 		<script src="static/js/bootstrap.min.js"></script>
@@ -19,13 +20,25 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div style="">
+		<!-- Clock module -->
+		<script src="bundles/info_services/clock.js"></script>
+		<script>startClock('top-left')</script>
+		<!-- -->
+		<div id="top-left" class="bundle-group top-left"></div>
+		<div id="top-right" class="bundle-group top-right">
+			<div class="bundle-contents top-right">
+				<div class="test">test</div>
+			</div>
 		</div>
-		<div style="">
+		<div id="bottom-left" class="bundle-group bottom-left">
+			<div class="bundle-contents bottom-left">
+				<div class="test">test</div>
+			</div>
 		</div>
-		<div style="">
-		</div>
-		<div style="">
+		<div id="bottom-right" class="bundle-group bottom-right">
+			<div class="bundle-contents bottom-right">
+				<div class="test">test</div>
+			</div>
 		</div>
 	</body>
 </html>

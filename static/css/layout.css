@@ -1,3 +1,38 @@
 body {
 	background-color: black;
+	color: white;
+    font-family: Roboto;
+}
+
+
+.bundle-group {
+	position: fixed;
+	width: 50%;
+	padding: 10px;
+}
+.bundle-contents {
+	position: fixed;
+}
+.top-left {
+	left: 0;
+	top: 0;
+}
+.top-right {
+	right: 0;
+	top: 0;
+}
+.bottom-left {
+	left: 0;
+	bottom: 0;
+}
+.bottom-right {
+	right: 0;
+	bottom: 0;
+}
+
+
+.test {
+	width: 50%;
+	border: 3px solid #73AD21;
+	text-align: center;
 }
