@@ -7,7 +7,7 @@ function startWeather(pageLocation) {
 	function GetWeather() {
 		// Retrieve weather from server
 		//
-		var theUri = "/data/info/weather/forecast"
+		var theUri = "/data/info/weather/forecast";
 		httpGetAsync(theUri, createWeather);
 		// (as XMLHttpRequest is being used async,
 		// return the createWeather as callback)
@@ -17,7 +17,7 @@ function startWeather(pageLocation) {
 	function createWeather(data) {
 		//
 		// Parse json
-//		dataJson = JSON.parse(data)
+		dataJson = JSON.parse(data);
 		
 		//
 		// Exploitation of data
