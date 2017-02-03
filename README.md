@@ -11,5 +11,5 @@ Inspiration taken from <a href="https://magicmirror.builders/">Magic Mirror</a>.
 - Weather forecast
 - TV Listings
 
-<img src="https://github.com/robe16/HomeControl-documentation/blob/master/img_interfaces_mirrorui-server.jpg">
+<img src="https://github.com/robe16/HomeControl-documentation/blob/master/images/interfaces/img_interfaces_mirrorui-server.jpg">
 <h5>Figure: Interfaces between HomeControl-mirrorUI and HomeControl-server</h5>
