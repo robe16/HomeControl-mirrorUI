@@ -1,5 +1,7 @@
 # HomeControl-mirrorUI
 
+<strong>Full documentation can be found at https://github.com/robe16/HomeControl-documentation/wiki/HomeControl-MirrorUI</strong>
+
 Client to run alongside the main server - intention to have both run 24/7 on Raspberry Pis.
 
 A web interface in HTML that updates via Javascript within a web browser. White on black interface to be displayed on a screen mounted behind a <a href="https://en.wikipedia.org/wiki/One-way_mirror">one-way mirror</a>.
