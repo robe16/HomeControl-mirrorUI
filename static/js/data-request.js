@@ -1,7 +1,7 @@
 function httpGetAsync(theUri, callback)
 {
     // Change the below to match the HomeControl-server IP
-	var serverIP = "http://192.168.0.3:1600"
+	var serverIP = "http://192.168.0.103:1600"
 	var theUrl = serverIP + theUri
 	//
 	var xmlHttp = new XMLHttpRequest();
