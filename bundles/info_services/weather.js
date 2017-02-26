@@ -30,7 +30,7 @@ function startWeather(pageLocation) {
 			var daytime = day_item.daytime;
 //		    var nighttime = day_item.nighttime;
 //		    var hourly = day_item["3hourly"];
-		    //
+			//
 		    var dateObj = moment(day_item.date, "YYYY-MM-DD");
 		    var strDay = dateObj.format("ddd");
 		    var strDate = dateObj.format("Do MMMM");
@@ -44,6 +44,11 @@ function startWeather(pageLocation) {
 		    var rain_unit = dataJson.units.daily.precipitation_prob;
 		    var visibility = daytime.visibility;
 		    var uv = daytime.uv_index;
+		    //
+		    var sunriseDateObj = moment(day_item.sunRiseSet.sunrise, "YYYY-MM-DD h:mm:ss");
+		    var sunrise = sunriseDateObj.format("HH:mm");
+		    var sunsetDateObj = moment(day_item.sunRiseSet.sunset, "YYYY-MM-DD h:mm:ss");
+		    var sunset = sunsetDateObj.format("HH:mm");
 		    //
 			//
 			if (d==0) {
@@ -72,6 +77,37 @@ function startWeather(pageLocation) {
 				rowDiv.className = "row";
 				rowDiv.appendChild(divTodayType);
 				rowDiv.appendChild(divTodayTemp);
+				//
+				weatherDiv.appendChild(rowDiv)
+				//
+				// Sunrise
+				var glyphSunrise = document.createElement("I");
+				glyphSunrise.className = "material-text-light-disabled weather_type_glyph_hr wi wi-sunrise";
+				glyphSunrise.style.padding = "10px 0px 0px 0px";
+				var divSunriseG = document.createElement("DIV");
+				divSunriseG.className = "col-xs-1 weather_detail";
+				divSunriseG.appendChild(glyphSunrise)
+				var divSunriseP = document.createElement("DIV");
+				divSunriseP.className = "col-xs-5 weather_detail";
+				divSunriseP.innerHTML = sunrise;
+				//
+				// Sunset
+				var glyphSunset = document.createElement("I");
+				glyphSunset.className = "material-text-light-disabled weather_type_glyph_hr wi wi-sunrise";
+				glyphSunset.style.padding = "10px 0px 0px 0px";
+				var divSunsetG = document.createElement("DIV");
+				divSunsetG.className = "col-xs-1 weather_detail";
+				divSunsetG.appendChild(glyphSunset)
+				var divSunsetP = document.createElement("DIV");
+				divSunsetP.className = "col-xs-4 weather_detail";
+				divSunsetP.innerHTML = sunset;
+				//
+				var rowDiv = document.createElement("DIV");
+				rowDiv.className = "row";
+				rowDiv.appendChild(divSunriseG);
+				rowDiv.appendChild(divSunriseP);
+				rowDiv.appendChild(divSunsetG);
+				rowDiv.appendChild(divSunsetP);
 				//
 				weatherDiv.appendChild(rowDiv)
 				//
