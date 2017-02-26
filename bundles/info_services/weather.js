@@ -78,7 +78,7 @@ function startWeather(pageLocation) {
 				rowDiv.appendChild(divTodayType);
 				rowDiv.appendChild(divTodayTemp);
 				//
-				weatherDiv.appendChild(rowDiv)
+				weatherDiv.appendChild(rowDiv);
 				//
 				// Sunrise
 				var glyphSunrise = document.createElement("I");
@@ -109,7 +109,7 @@ function startWeather(pageLocation) {
 				rowDiv.appendChild(divSunsetG);
 				rowDiv.appendChild(divSunsetP);
 				//
-				weatherDiv.appendChild(rowDiv)
+				weatherDiv.appendChild(rowDiv);
 				//
 				// wind
 				var glyphWind = document.createElement("I");
@@ -140,7 +140,7 @@ function startWeather(pageLocation) {
 				rowDiv.appendChild(divRainG);
 				rowDiv.appendChild(divRainP);
 				//
-				weatherDiv.appendChild(rowDiv)
+				weatherDiv.appendChild(rowDiv);
 				//
 				// visibility
 				var glyphVisibility = document.createElement("I");
@@ -171,7 +171,7 @@ function startWeather(pageLocation) {
 				rowDiv.appendChild(divUvG);
 				rowDiv.appendChild(divUvP);
 				//
-				weatherDiv.appendChild(rowDiv)
+				weatherDiv.appendChild(rowDiv);
 				//
 				var divider = document.createElement("HR");
 				divider.className = "weather_divider material-text-light-disabled";
@@ -179,7 +179,7 @@ function startWeather(pageLocation) {
 				rowDiv.className = "row";
 				rowDiv.appendChild(divider);
 				//
-				weatherDiv.appendChild(rowDiv)
+				weatherDiv.appendChild(rowDiv);
 				//
 			} else {
 				// Create individual rows for each day of the coming week
