@@ -25,6 +25,7 @@
 		<!-- Module scripts -->
 		<script src="bundles/info_services/clock.js"></script>
 		<script src="bundles/info_services/weather.js"></script>
+		<script src="bundles/info_services/news.js"></script>
 		<!-- Module styles -->
 		<link rel="stylesheet" href="bundles/info_services/clock.css">
 		<link rel="stylesheet" href="bundles/info_services/weather.css">
@@ -32,6 +33,7 @@
 		<link rel="stylesheet" href="static/css/weather-icons.min.css">
 		<link rel="stylesheet" href="static/css/weather-icons-wind.css">
 		<link rel="stylesheet" href="static/css/weather-icons-wind.min.css">
+		<link rel="stylesheet" href="bundles/info_services/news.css">
 		<!-- -->
 	</head>
 	<body>
@@ -39,6 +41,7 @@
 			window.onload=function() {
 				startClock('top-left');
 				startWeather('top-right');
+				startNews('bottom-left');
 			}
 		</script>
 		<!-- -->
