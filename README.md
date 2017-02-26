@@ -11,7 +11,7 @@ Inspiration taken from <a href="https://magicmirror.builders/">Magic Mirror</a>.
 <h4>Bundles that have been developed:</h4>
 <p>Info Services</p>
 - Weather forecast
-- TV Listings
+- News articles
 
 <img src="https://github.com/robe16/HomeControl-documentation/blob/master/images/interfaces/img_interfaces_mirrorui-server.jpg">
 <h5>Figure: Interfaces between HomeControl-mirrorUI and HomeControl-server</h5>
