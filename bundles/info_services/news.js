@@ -90,5 +90,5 @@ function startNews(pageLocation) {
 	}
 	
 	GetNews();
-	setInterval(GetNews, 100000); //10minutes
+	setInterval(GetNews, 50000); //5minutes
 }
