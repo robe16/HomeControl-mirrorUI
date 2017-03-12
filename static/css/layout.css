@@ -4,24 +4,38 @@ body {
     font-family: Roboto;
 }
 
+.top {
+	top: 0;
+}
+.bottom {
+	bottom: 0;
+}
+.left {
+	left: 0;
+}
+.middle {
+	left: 50%;
+    transform: translateX(-50%);
+}
+.right {
+	right: 0;
+}
 
 .bundle-group {
 	position: fixed;
 	padding: 10px;
+	/* border: 1px solid red; */
 }
-.top-left {
-	left: 0;
-	top: 0;
+.bundle {
+	width: 100%;
 }
-.top-right {
-	right: 0;
-	top: 0;
+
+.bundle-group-1 {
+	width: 100%;
 }
-.bottom-left {
-	left: 0;
-	bottom: 0;
+.bundle-group-2 {
+	width: 48%;
 }
-.bottom-right {
-	right: 0;
-	bottom: 0;
+.bundle-group-3 {
+	width: 29%;
 }
